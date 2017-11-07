@@ -38,24 +38,6 @@ public class FixtureStatActivity extends AppCompatActivity {
 
     RequestQueue requestQueue;
 
-    // Head to head TextViews
-    //TextView overTwoGoals, overOneGoal;
-
-    // Head to head ProgressBars
-    //ProgressBar bttsProgress, overTwoProgress, overOneProgress;
-
-    // Home Textviews
-    //TextView homeBtts, homeOverTwoGoals, homeOverOneGoal, goalsForHome, goalsAgainstHome;
-
-    // Home ProgressBars
-    //ProgressBar homeBttsProgress, homeOverTwoProgress, homeOverOneProgress;
-
-    // Away Textviews
-    //TextView awayBtts, awayOverTwoGoals, awayOverOneGoal, goalsForAway, goalsAgainstAway;
-
-    // Away ProgressBars
-    //ProgressBar awayBttsProgress, awayOverTwoProgress, awayOverOneProgress;
-
     // Team names
     String homeTeam, awayTeam;
 
@@ -77,40 +59,6 @@ public class FixtureStatActivity extends AppCompatActivity {
         }
 
         requestQueue = Volley.newRequestQueue(this.getApplicationContext());
-
-//        // Get h2h text views
-//        h2hBtts = (TextView) findViewById(R.id.Btts_Percentage_Text);
-//        overTwoGoals = (TextView) findViewById(R.id.Over_Two_Percentage_Text);
-//        overOneGoal = (TextView) findViewById(R.id.Over_One_Percentage_Text);
-//
-//        // Get h2h progress bars
-//        bttsProgress = (ProgressBar) findViewById(R.id.Btts_Percentage_Bar);
-//        overTwoProgress = (ProgressBar) findViewById(R.id.Over_Two_Percentage_Bar);
-//        overOneProgress = (ProgressBar) findViewById(R.id.Over_One_Percentage_Bar);
-//
-//        // Get home text views
-//        homeBtts = (TextView) findViewById(R.id.Btts_Home_Percentage_Text);
-//        homeOverTwoGoals = (TextView) findViewById(R.id.Over_Two_Home_Percentage_Text);
-//        homeOverOneGoal = (TextView) findViewById(R.id.Over_One_Home_Percentage_Text);
-//        goalsForHome = (TextView) findViewById(R.id.Goals_For_Home_Percentage_Text);
-//        goalsAgainstHome = (TextView) findViewById(R.id.Goals_Against_Home_Percentage_Text);
-//
-//        // Get home progress bars
-//        homeBttsProgress = (ProgressBar) findViewById(R.id.Btts_Home_Percentage_Bar);
-//        homeOverTwoProgress = (ProgressBar) findViewById(R.id.Over_Two_Home_Percentage_Bar);
-//        homeOverOneProgress = (ProgressBar) findViewById(R.id.Over_One_Home_Percentage_Bar);
-//
-//        // Get away text views
-//        awayBtts = (TextView) findViewById(R.id.Btts_Away_Percentage_Text);
-//        awayOverTwoGoals = (TextView) findViewById(R.id.Over_Two_Away_Percentage_Text);
-//        awayOverOneGoal = (TextView) findViewById(R.id.Over_One_Away_Percentage_Text);
-//        goalsForAway = (TextView) findViewById(R.id.Goals_For_Away_Percentage_Text);
-//        goalsAgainstAway = (TextView) findViewById(R.id.Goals_Against_Away_Percentage_Text);
-//
-//        // Get away progress bars
-//        awayBttsProgress = (ProgressBar) findViewById(R.id.Btts_Away_Percentage_Bar);
-//        awayOverTwoProgress = (ProgressBar) findViewById(R.id.Over_Two_Away_Percentage_Bar);
-//        awayOverOneProgress = (ProgressBar) findViewById(R.id.Over_One_Away_Percentage_Bar);
 
         getBttsPercentage(fixturesApi);
     }
