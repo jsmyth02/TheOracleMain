@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:orientation="vertical"
+        android:background="#85859A"
+        tools:context="jamiesmyth.theoraclemain.FixtureStatActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="6dp">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/Home_Form"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:layout_margin="6dp"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Home_Form_Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Form"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight=".4">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Btts_Home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Btts_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="BTTS"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_weight=".55">
+
+                            <ProgressBar
+                                android:id="@+id/Btts_Home_Percentage_Bar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="0"
+                                android:layout_centerInParent="true"
+                                android:progressDrawable="@drawable/circular"
+                                android:secondaryProgress="100"
+                                />
+
+                            <TextView
+                                android:id="@+id/Btts_Home_Percentage_Text"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="25%"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Over_Two_Home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Over_Two_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="Over 2.5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_weight=".55">
+
+                            <ProgressBar
+                                android:id="@+id/Over_Two_Home_Percentage_Bar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="0"
+                                android:layout_centerInParent="true"
+                                android:progressDrawable="@drawable/circular"
+                                android:secondaryProgress="100"
+                                />
+
+                            <TextView
+                                android:id="@+id/Over_Two_Home_Percentage_Text"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="25%"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Over_One_Home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Over_One_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="Over 1.5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_weight=".55">
+
+                            <ProgressBar
+                                android:id="@+id/Over_One_Home_Percentage_Bar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="0"
+                                android:layout_centerInParent="true"
+                                android:progressDrawable="@drawable/circular"
+                                android:secondaryProgress="100"
+                                />
+
+                            <TextView
+                                android:id="@+id/Over_One_Home_Percentage_Text"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:gravity="center"
+                                android:text="25%"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight=".4">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/First_Half_Home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/First_Half_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="1st Half"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <TextView
+                            android:id="@+id/First_Half_Home_Percentage_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".75"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Goals_For"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Goals_For_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="Avg. For"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <TextView
+                            android:id="@+id/Goals_For_Home_Percentage_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".75"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Goals_Against_Home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".33"
+                    android:layout_margin="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Goals_Against_Home_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".25"
+                            android:gravity="center"
+                            android:text="Avg. Against"
+                            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                        <TextView
+                            android:id="@+id/Goals_Against_Home_Percentage_Text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".75"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/Griffs_Rule"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight=".2"-->
+                <!--android:layout_margin="6dp"-->
+                <!--card_view:cardCornerRadius="4dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/Griffs_Rule_Text"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:text="Griffs Rule"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center"-->
+                        <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

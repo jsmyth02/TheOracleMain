@@ -1,0 +1,8 @@
+<resources>
+    // GENERAL STRINGS
+    <string name="app_name">The Oracle Main</string>
+    <string name="not_applicable">N/A</string>
+
+    // HEAD TO HEAD STRINGS
+    <string name="head_to_head">Head to Head</string>
+</resources>
