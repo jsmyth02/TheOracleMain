@@ -3,6 +3,14 @@
     <string name="app_name">The Oracle Main</string>
     <string name="not_applicable">N/A</string>
 
-    // HEAD TO HEAD STRINGS
+    // FIXTURE STRINGS
     <string name="head_to_head">Head to Head</string>
+    <string name="away_form">Away Form</string>
+    <string name="home_form">Home Form</string>
+    <string name="btts">BTTS</string>
+    <string name="over_2.5">Over 2.5</string>
+    <string name="over_1.5">Over 1.5</string>
+    <string name="first_half">1st Half</string>
+    <string name="average_for">Avg. For</string>
+    <string name="average_against">Avg. Against</string>
 </resources>

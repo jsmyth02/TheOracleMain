@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
@@ -31,14 +30,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/Away_Text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Away Form"
-                        android:layout_weight="1"
+                        android:text="@string/away_form"
+                        android:layout_weight=".75"
+                        android:gravity="center"
+                        android:paddingLeft="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <TextView
+                        android:id="@+id/Number_Of_Matches_Away"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/not_applicable"
+                        android:layout_weight=".25"
                         android:gravity="center"
                         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
@@ -72,7 +81,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="BTTS"
+                            android:text="@string/btts"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <RelativeLayout
@@ -98,10 +107,10 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:gravity="center"
-                                android:text="25%"
+                                android:text="@string/not_applicable"
                                 android:layout_centerInParent="true"
                                 android:textColor="@color/colorPrimaryDark"
-                                android:textSize="10sp" />
+                                android:textSize="12sp" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -128,7 +137,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="Over 2.5"
+                            android:text="@string/over_2.5"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <RelativeLayout
@@ -154,10 +163,10 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:gravity="center"
-                                android:text="25%"
+                                android:text="@string/not_applicable"
                                 android:layout_centerInParent="true"
                                 android:textColor="@color/colorPrimaryDark"
-                                android:textSize="10sp" />
+                                android:textSize="12sp" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -184,7 +193,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="Over 1.5"
+                            android:text="@string/over_1.5"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <RelativeLayout
@@ -210,10 +219,10 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:gravity="center"
-                                android:text="25%"
+                                android:text="@string/not_applicable"
                                 android:layout_centerInParent="true"
                                 android:textColor="@color/colorPrimaryDark"
-                                android:textSize="10sp" />
+                                android:textSize="12sp" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -248,7 +257,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="1st Half"
+                            android:text="@string/first_half"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <TextView
@@ -257,7 +266,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".75"
                             android:gravity="center"
-                            android:text="0%"
+                            android:text="@string/not_applicable"
                             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                     </LinearLayout>
@@ -284,7 +293,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="Avg. For"
+                            android:text="@string/average_for"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <TextView
@@ -293,7 +302,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".75"
                             android:gravity="center"
-                            android:text="0"
+                            android:text="@string/not_applicable"
                             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                     </LinearLayout>
@@ -320,7 +329,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".25"
                             android:gravity="center"
-                            android:text="Avg. Against"
+                            android:text="@string/average_against"
                             android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                         <TextView
@@ -329,7 +338,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight=".75"
                             android:gravity="center"
-                            android:text="0"
+                            android:text="@string/not_applicable"
                             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
                     </LinearLayout>
